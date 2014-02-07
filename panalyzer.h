@@ -43,14 +43,14 @@ typedef panctl_t *panctl_p;
 
 #define MAX_CHANNELS	8
 
-#define DEF_CHANNELS	{ 4,17,18,21 }
+#define DEF_CHANNELS	{ 4,17,18,21,22,23,24 }
 //#define DEF_CHANNELS	{ 5,4,3,2,1,0 }
 
 #define DEF_PANCTL \
 	{ \
 		.magic			= PAN_MAGIC, \
 		.version		= PAN_VERSION, \
-		.channel_mask	= 1<<4|1<<17|1<<18|1<<21, \
+		.channel_mask	= 1<<4|1<<17|1<<18|1<<21|1<<22|1<<23|1<<24, \
 		.sample_rate	= 1, \
 		.num_samples	= 10000, \
 		.trigger_point	= 0, \
